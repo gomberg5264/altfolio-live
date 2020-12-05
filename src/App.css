@@ -1,0 +1,331 @@
+.App-container {
+  max-width: var(--maxSiteWidth);
+  margin: var(--panelPadding) auto;
+}
+
+.App-sticky {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  padding: 15px;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  text-align: center;
+  color: var(--siteBodyColor);
+  background-color: var(--siteColor);
+  transition: 400ms opacity;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: var(--maxSiteWidth);
+}
+
+.App-sticky-label {
+  font-weight: 600;
+  color: var(--siteSecondaryColor);
+  font-size: 10px;
+  margin-right: 7px;
+}
+
+.App-panel {
+  border-radius: var(--smallBorderRadius);
+  background-color: #FFFFFF;
+  border: 1px solid var(--siteSecondaryColor);
+}
+
+.App-share {
+  padding: var(--panelPadding);
+  display: flex;
+  margin-bottom: var(--panelPadding);
+}
+
+.App-share h1 {
+  font-size: 120%;
+  margin-bottom: 15px;
+  color: var(--siteTertiaryTextColor);
+}
+
+.App-share h2 {
+  width: 30px;
+  white-space: nowrap;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--siteSecondaryColor)
+}
+
+.App-share > div {
+  max-width: calc((var(--maxSiteWidth) - var(--panelPadding)) / 2);
+  flex: 1;
+}
+
+.App-share img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+.App-share p {
+  margin: 0 15px;
+}
+
+.App-share li {
+  display: flex;
+  margin-top: 3px;
+}
+
+.App-share-feedback {
+  text-align: right;
+}
+
+.App-share-feedback li {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+
+.App-listings {
+  display: flex;
+  margin-top: var(--panelPadding);
+  justify-content: space-between;
+}
+
+.App-cryptocurrencies,
+.App-stocks {
+  flex: 1;
+  max-width: calc((var(--maxSiteWidth) - var(--panelPadding)) / 2);
+}
+
+.App-overview {
+  padding: var(--panelPadding);
+}
+
+.App-flex {
+  display: flex;
+}
+
+.App-chart {
+  width: 100%;
+  margin: 20px 0 0 0;
+  padding-top: var(--panelPadding);
+  border-top: 1px solid var(--siteSecondaryColor);
+}
+
+::placeholder {
+  color: var(--siteSecondaryColor);
+}
+
+.radio-group {
+  display: flex;
+  margin: 15px;
+  border-radius: var(--smallBorderRadius);
+  height: 100%;
+}
+
+.radio-group-option:first-of-type {
+  border-radius: var(--smallBorderRadius) 0 0 var(--smallBorderRadius);
+}
+
+.radio-group-option {
+  padding: 5px 9px;
+  border: 1px var(--siteSecondaryColor);
+  border-style: solid none solid solid;
+  color: var(--siteTertiaryTextColor);
+  cursor: pointer;
+}
+
+.radio-group-option:last-of-type {
+  border-radius: 0 var(--smallBorderRadius) var(--smallBorderRadius) 0;
+  border-style: solid;
+}
+
+.radio-group-option.selected {
+  background-color: var(--siteTertiaryTextColor);
+  color: white;
+}
+
+.App-cryptocurrencies-label {
+  padding: 0 15px;
+  font-size: 120%;
+  display: flex;
+}
+
+.App-cryptocurrencies-label-buy {
+  padding: 4px 0 0 0;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.App-cryptocurrencies-header,
+.App-stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-cryptocurrencies-add {
+  border-top: 1px solid var(--siteSecondaryColor);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--siteTertiaryTextColor);
+  position: relative;
+}
+
+.App-cryptocurrencies-add-ticker {
+  height: 80%;
+  width: 80px;
+  margin: 0 6px;
+  border-radius: 4px;
+  border: 1px solid var(--siteSecondaryColor);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--siteTertiaryTextColor);
+}
+
+.App-cryptocurrencies-add-go {
+  position: absolute;
+  right: 20px;
+  border: 1px solid #57bf00;
+  padding: 3px 6px;
+  border-radius: 4px;
+  top: 18px;
+  color: #57bf00;
+  transition: 400ms all;
+  cursor: pointer;
+}
+
+.App-cryptocurrencies-add-go:hover {
+  border: 1px solid #50ac00;
+  background: #57bf00;
+  color: white;
+
+}
+
+.App-cryptocurrencies-add-ticker::placeholder {
+  text-transform: lowercase;
+}
+
+.App-cryptocurrencies-add,
+.App-stocks-add {
+  border-top: 1px solid var(--siteSecondaryColor);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--siteTertiaryTextColor);
+  position: relative;
+}
+
+.App-stocks-add {
+  padding: 25px 0 25px 0
+}
+
+.App-cryptocurrencies-add a,
+.App-stocks-add a {
+  text-decoration: underline;
+}
+
+.App-why {
+  color: var(--siteTertiaryTextColor);
+  padding: 20px;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.App-why div {
+  margin-top: 10px;
+}
+
+.App-why div:last-of-type {
+  margin-top: 30px;
+}
+
+.App-why span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.App-notification {
+  background-color: var(--siteBodyColor);
+  position: fixed;
+  top: 6px;
+  left: 50%;
+  width: 180px;
+  margin-left: -90px;
+  text-align: center;
+  padding: 10px;
+  color: var(--siteColor);
+  border-radius: var(--smallBorderRadius);
+  z-index: 2;
+  border: 1px solid var(--siteSecondaryColor);
+}
+
+.App-alt-short-text {
+  display: none;
+}
+
+.App-show-instructions {
+  color: var(--siteTertiaryTextColor);
+  padding: 20px;
+  border-top: 1px solid var(--siteSecondaryColor);
+  position: relative;
+}
+
+.App-show-instructions img {
+  height: 16px;
+  position: absolute;
+  right: 29%;
+}
+
+@media (max-width: 1120px) {
+  .App-sticky.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .App-optional {
+    display: none;
+  }
+
+  .App-alt-short-text {
+    display: block;
+  }
+
+  .App-flex {
+    flex-wrap: wrap;
+  }
+
+  .App-listings {
+    flex-direction: column;
+  }
+
+  .App-cryptocurrencies {
+    margin-bottom: 20px;
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1120px) {
+  .App-overview {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .App-listings {
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-overview {
+    border-radius: 0;
+    border-style: solid none solid none;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "altfolio-rodeo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cleave.js": "^1.0.9",
+    "cryptocurrency-icons": "^0.16.1",
+    "hot-shots": "^5.0.0",
+    "lodash": "^4.17.13",
+    "moment": "^2.20.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-odometer": "^0.0.1",
+    "react-odometerjs": "^2.0.0",
+    "react-scripts": "1.0.17",
+    "reconnecting-websocket": "^3.2.2",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "socket.io-client": "^2.0.4",
+    "ws": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

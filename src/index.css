@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--siteFontFamily);
+  background: var(--siteBodyColor);
+}
+
+input {
+  font-family: var(--siteFontFamily);
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--siteColor);
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.symbol {
+  font-weight: bold;
+  color: var(--siteSecondaryColor);
+  width: 20px;
+}
+
+input[type=text],
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@keyframes price-move-up {
+  10% {
+    background: rgba(87, 191, 0, 0.1);
+  }
+}
+
+.price-move-up {
+  animation-name: price-move-up;
+  animation-duration: 1500ms;
+}
+
+@keyframes price-move-down {
+  10% {
+    background: rgba(255, 102, 0, 0.1);
+  }
+}
+
+.price-move-down {
+  animation-name: price-move-down;
+  animation-duration: 1500ms;
+}
+
+.positive {
+  color: var(--colorChangePositive) !important;
+}
+
+.negative {
+  color: var(--colorChangeNegative) !important;
+}
